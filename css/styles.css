@@ -4,7 +4,8 @@
   --logo-font-color: #2196f3;
   --background-color: #fff;
   --panel-background: #2f303a;
-  --button-inactive-color: #f5f4fa;
+  --button-inactive-state: #f5f4fa;
+  --button-active-state: #188CE8;
   --work-border-color: #eee;
 }
 /* Debugging parameter, to display borders between all elements */
@@ -106,6 +107,12 @@ body {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
+
+  padding: 10px 32px;
+}
+
+.request-service:active {
+    background-color: var(--button-active-state);
 }
 
 .section-name {
@@ -203,8 +210,8 @@ body {
   margin-bottom: 50px;
 }
 
-.work-types {
-  background-color: var(--button-inactive-color);
+.work-types__button {
+  background-color: var(--button-inactive-state);
   color: var(--secondary-font-color);
 
   font-family: "Roboto", sans-serif;
@@ -217,15 +224,27 @@ body {
   border-radius: 4px;
 
   cursor: pointer;
+
+  padding: 6px 25px;
 }
 
-.work-types:hover,
-.work-types:focus {
+.work-types__button:hover,
+.work-types__button:focus {
   background-color: var(--logo-font-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+              0px 1px 2px rgba(0, 0, 0, 0.08),
+              0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.work-types__button:active {
+    background-color: var(--button-active-state);
 }
 
 .current-button {
   background-color: var(--logo-font-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+              0px 1px 2px rgba(0, 0, 0, 0.08),
+              0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-cards {
