@@ -104,6 +104,8 @@ body {
   border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
 }
 
 .section-name {
@@ -213,6 +215,8 @@ body {
 
   border: none;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .work-types:hover,
@@ -281,7 +285,6 @@ body {
 
 .work-description {
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
 }
