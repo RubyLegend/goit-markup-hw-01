@@ -7,6 +7,7 @@
   --button-inactive-state: #f5f4fa;
   --team-background: #f5f4fa;
   --button-active-state: #188CE8;
+  --contacts-font-color: rgba(255,255,255,.6);
   --work-border-color: #eee;
 }
 /* Debugging parameter, to display borders between all elements */
@@ -91,8 +92,8 @@ body {
   margin-right: 25px;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link__head:hover,
+.contact-link__head:focus {
   color: var(--logo-font-color);
 }
 
@@ -118,7 +119,7 @@ body {
 
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-style: normal;
+  
   font-size: 16px;
   line-height: 1.875;
 
@@ -132,7 +133,7 @@ body {
   padding: 10px 32px;
 }
 
-.request-service:active {
+.request-service:active, .request-service:hover, .request-service:focus {
     background-color: var(--button-active-state);
 }
 
@@ -172,7 +173,7 @@ body {
 
 .list-features__name {
   color: var(--secondary-font-color);
-  font-style: normal;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -234,6 +235,16 @@ body {
 
 .team-card__name {
   color: var(--secondary-font-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1875;
+  text-align: center;
+}
+
+.team-card__description {
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
 }
 
 /* Portfolio page */
@@ -335,14 +346,12 @@ body {
   color: var(--secondary-font-color);
 
   font-weight: 700;
-  font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .work-description {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.875;
 }
@@ -364,16 +373,19 @@ body {
 
 .map-link {
   color: var(--background-color);
-  text-decoration: none;
 }
 
 .contact-link__bottom {
   font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-font-color);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--contacts-font-color);
 }
 
+.contact-link__bottom:hover,
+.contact-link__bottom:focus {
+  color: var(--logo-font-color);
+}
 
 .map-link:hover,
 .map-link:focus {
