@@ -5,6 +5,7 @@
   --background-color: #fff;
   --panel-background: #2f303a;
   --button-inactive-state: #f5f4fa;
+  --team-background: #f5f4fa;
   --button-active-state: #188CE8;
   --work-border-color: #eee;
 }
@@ -141,6 +142,8 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 /* Our key features */
@@ -151,6 +154,7 @@ body {
   grid-template-rows: 1fr;
   column-gap: 30px;
   row-gap: 0px;
+  padding-top: 94px;
 }
 
 .features-element1 {
@@ -186,6 +190,7 @@ body {
   grid-template-rows: 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 0px;
+  padding-bottom: 94px;
 }
 
 .images-element1 {
@@ -200,12 +205,18 @@ body {
 
 /* Our team */
 
+.team {
+  background-color: var(--team-background);
+  padding-bottom: 94px;
+}
+
 .team-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   column-gap: 30px;
   row-gap: 0px;
+  padding-bottom: 94px;
 }
 
 .team-element1 {
@@ -340,7 +351,6 @@ body {
 .basement-bg {
   background-color: var(--panel-background);
   padding: 60px 215px 60px 215px;
-  margin-top: 96px;
 }
 
 .logo-footer {
