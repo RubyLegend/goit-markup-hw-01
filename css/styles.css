@@ -43,6 +43,21 @@ body {
   color: var(--logo-font-color);
 }
 
+.header-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-inline__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-inline__contacts {
+  display: flex;
+  align-items: center;
+}
+
 .logo-header {
   color: var(--secondary-font-color);
 }
@@ -52,6 +67,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .current {
@@ -63,11 +80,13 @@ body {
   color: var(--logo-font-color);
 }
 
-.contact-link {
+.contact-link__head {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-font-color);
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .contact-link:hover,
@@ -154,6 +173,10 @@ body {
   text-transform: uppercase;
 }
 
+.list-features__description {
+  line-height: 1.714;
+}
+
 /* What do we do */
 
 .images-box {
@@ -214,7 +237,8 @@ body {
   background-color: var(--button-inactive-state);
   color: var(--secondary-font-color);
 
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
@@ -230,6 +254,7 @@ body {
 
 .work-types__button:hover,
 .work-types__button:focus {
+  color: var(--background-color);
   background-color: var(--logo-font-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
               0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -237,10 +262,12 @@ body {
 }
 
 .work-types__button:active {
+    color: var(--background-color);
     background-color: var(--button-active-state);
 }
 
 .current-button {
+  color: var(--background-color);
   background-color: var(--logo-font-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
               0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -319,7 +346,25 @@ body {
   color: var(--background-color);
 }
 
+.contacts {
+  line-height: 1.714;
+  padding-left: 0;
+}
+
 .map-link {
   color: var(--background-color);
   text-decoration: none;
+}
+
+.contact-link__bottom {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-font-color);
+}
+
+
+.map-link:hover,
+.map-link:focus {
+  color: var(--logo-font-color);
 }
