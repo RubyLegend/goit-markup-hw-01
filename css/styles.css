@@ -23,7 +23,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-font-color);
   background-color: var(--background-color);
-  /*background-color: #000;*/
 }
 
 .link {
